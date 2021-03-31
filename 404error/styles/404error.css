@@ -1,0 +1,171 @@
+/* Import font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+/* Set the color with variables to facilate the darkmode */
+
+:root
+{
+  --textColor: #000000;
+  --highlightColor: #FFFFFF;
+  --grey: #C4C4C4;
+  --bgColor: #FFFFFF;
+  --primaryColor: #F74D41;
+}
+
+
+[data-theme="dark"]
+{
+  --textColor: #FFFFFF;
+  --highlightColor: #000000;
+  --grey: #C4C4C4;
+  --bgColor: #171717;
+  --primaryColor: #F74D41;
+}
+
+
+/*---- HEADER ----*/
+
+::selection {
+  color: var(--highlightColor);
+  background: var(--primaryColor);
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins';
+  font-weight: 500;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  transition: all 0.4s ease;
+}
+
+.conteneur
+{
+  display: flex;
+  width: 87vw;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 87vw;
+  height: 8vw;
+  font-weight: 500;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 85vw;
+  list-style: none;
+  margin-right: -2em;
+}
+
+li:hover
+{
+  color: var(--primaryColor);
+  transition: 0.3s ease-in-out;
+}
+
+li
+{
+  margin-right: 2em;
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
+}
+
+.logo
+{
+  display: flex;
+  width: 5vw;
+  height: 5vh;
+  margin:0;
+}
+
+.colorMode
+{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+
+/*---- MAIN ----*/
+.text
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 45%;
+}
+
+
+.titres
+{
+  display: flex;
+  justify-content: center;
+  font-family: "Moret";
+  font-size: 2.5em;
+}
+
+
+.connexion
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  background-color: var(--primaryColor);
+  border-radius: 60px;
+  margin: 0 auto;
+  margin-top: 3em;
+  outline: none;
+  border: none;
+  width: 13vw;
+  height: 6vh;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.connexion:hover
+{
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+a
+{
+  color: unset;
+  text-decoration: none;
+}
+
+.error404
+{
+  position: fixed;
+  z-index: -10;
+}

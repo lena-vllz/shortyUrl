@@ -1,0 +1,242 @@
+/* Import font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+/* Set the color with variables to facilate the darkmode */
+
+:root
+{
+  --textColor: #000000;
+  --highlightColor: #FFFFFF;
+  --grey: #C4C4C4;
+  --bgColor: #FFFFFF;
+  --primaryColor: #F74D41;
+}
+
+
+[data-theme="dark"]
+{
+  --textColor: #FFFFFF;
+  --highlightColor: #000000;
+  --grey: #C4C4C4;
+  --bgColor: #171717;
+  --primaryColor: #F74D41;
+}
+
+
+/*---- HEADER ----*/
+
+::selection {
+  color: var(--highlightColor);
+  background: var(--primaryColor);
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins';
+  font-weight: 500;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  transition: all 0.4s ease;
+}
+
+.conteneur
+{
+  display: flex;
+  width: 87vw;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 87vw;
+  height: 8vw;
+  font-weight: 500;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 85vw;
+  list-style: none;
+  margin-right: -2em;
+}
+
+li:hover
+{
+  color: var(--primaryColor);
+  transition: 0.3s ease-in-out;
+}
+
+li
+{
+  margin-right: 2em;
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
+}
+
+.logo
+{
+  display: flex;
+  width: 5vw;
+  height: 5vh;
+  margin:0;
+}
+
+.colorMode
+{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+
+/*---- MAIN ----*/
+
+.main
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.titres
+{
+  display: flex;
+  justify-content: center;
+  font-family: "Moret";
+  font-size: 2.5em;
+}
+
+.texte
+{
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  transition: 0.15s ease-in-out;
+}
+
+.sign_up_button
+{
+  border-bottom: solid 2px var(--primaryColor);
+  font-weight: 500;
+  color: unset;
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
+}
+
+.sign_up_button:hover
+{
+  opacity: 0.7;
+  transition: 0.15s ease-in-out;
+}
+
+.logs
+{
+  display: flex;
+  justify-content: center;
+  border-radius: 60px;
+  border: solid 2px var(--primaryColor);
+  margin-top: 1em;
+  padding: 1.7em;
+  padding-left: 2.1em;
+  outline: none;
+  width: 89%;
+  box-shadow: 0 0 0px 1000px var(--bgColor) inset;
+  font-family: "poppins";
+  color: var(--textColor);
+}
+
+.connexion
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  background-color: var(--primaryColor);
+  border-radius: 60px;
+  margin: 0 auto;
+  margin-top: 1em;
+  outline: none;
+  border: none;
+  width: 13vw;
+  height: 6vh;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.connexion:hover
+{
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.img
+{
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 5%;
+  height: auto;
+  right: 7%;
+  top: 57%;
+  transform:translateY(-50%);
+  user-select: none;
+  cursor: pointer;
+}
+
+.mdp_hide
+{
+  display: block;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  right: 38em;
+  top: 31em;
+}
+
+.pwd
+{
+  position: relative;
+}
+
+.error
+{
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.test
+{
+  display: flex;
+  position: relative;
+}
+
+a
+{
+  color: unset;
+  text-decoration: none;
+}
+
+.signup{
+  color: var(--primaryColor);
+}
